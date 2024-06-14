@@ -1,17 +1,15 @@
 # Parking Spot Detection System
-This project implements a parking spot detection system using computer vision and machine learning techniques. It detects whether parking spots in a video feed are occupied or not using a Support Vector Machine (SVM) classifier trained on parking spot images.
+This project implements a parking spot detection system using computer vision and machine learning techniques. It detects whether parking spots in a video feed are occupied or not using a Support Vector Machine (SVM) classifier trained on parking spot images. Used OpenCV to detect contours of rectangles in a desired area.
 
 ## Used Modules and Their Purpose
 - **os**: Handling file paths and directory operations.
 - **numpy**: Numerical operations and array handling.
 - **scikit-image (skimage)**: Image processing tasks such as reading, resizing images, and preprocessing.
 - **scikit-learn**: Training SVM model, grid search for hyperparameter tuning, and evaluating model accuracy.
-- **opencv-python (cv2)**: Video input/output operations, image processing, and drawing rectangles for visualization.
+- **opencv-python (cv2)**: Video input/output operations, image processing, and drawing rectangles for visualization, detecting rectangles in desired area.
 - **pickle5**: Saving and reading the model
 ## Usage
-
-
-https://github.com/mikolaj-olesinski/Parking-Spot-Detection-System/assets/137785302/b7a0e5a5-6903-4759-8b07-24a016a08a09
+https://github.com/mikolaj-olesinski/Parking-Spot-Detection-System/assets/137785302/7ae137ba-60ab-4337-9e58-1fe098ee8a86
 
 ![image](https://github.com/mikolaj-olesinski/Parking-Spot-Detection-System/assets/137785302/462cba78-42ea-48bc-ab05-96e6a9259413)
 
