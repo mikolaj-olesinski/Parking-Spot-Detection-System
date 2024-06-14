@@ -8,13 +8,12 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 import pickle
 
-input_dir = os.path.abspath(os.path.join('image_classification', 'clf-data'))
+input_dir = os.path.abspath(os.path.join('clf-data'))
 categories = ['empty', 'not_empty']
 
 data = []
 labels = []
 
-# Ensure the correct resizing dimensions
 image_size = (15, 15)
 
 for category_idx, category in enumerate(categories):
@@ -41,4 +40,4 @@ score = accuracy_score(y_prediction, y_test)
 
 print(f'{score * 100}% of samples correctly predicted')
 
-pickle.dump(best_estimator, open('./image_classification/model.p', 'wb'))
+pickle.dump(best_estimator, open('./model.p', 'wb'))

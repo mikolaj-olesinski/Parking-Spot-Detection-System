@@ -1,5 +1,26 @@
-def get_parking_spots_in_column(n_spots, first_parking_spot, height_of_spot, traffic_islands_spot, 
-                                break_spots, traffic_island_height, break_height):
+def get_parking_spots_in_column(n_spots: int, 
+                                first_parking_spot: list, 
+                                height_of_spot: int, 
+                                traffic_islands_spot: list = [], 
+                                break_spots: list = [], 
+                                traffic_island_height: int = 30, 
+                                break_height: int = 30) -> list:
+    '''
+    Function that returns the parking spots in a column
+    Parameters:
+    n_spots (int): The number of parking spots in the column
+    first_parking_spot (list): The first parking spot in the column
+    height_of_spot (int): The height of the parking spot
+    traffic_islands_spot (list): The list of parking spots where the traffic islands are present
+    break_spots (list): The list of parking spots where the break is present
+    traffic_island_height (int): The height of the traffic island
+    break_height (int): The height of the break
+
+    Returns:
+    list: The list of parking spots in the column
+
+    '''
+
 
     parkings_spots = []
     curr_spot = first_parking_spot
@@ -15,7 +36,10 @@ def get_parking_spots_in_column(n_spots, first_parking_spot, height_of_spot, tra
     return parkings_spots
 
 
-def get_all_parking_spots():
+def get_all_parking_spots() -> list[list[int]]:
+    '''
+    Returns a list of all parking spots in the parking lot
+    '''
     height = 32
     break_height = 34
     traffic_island_height = 35
@@ -102,6 +126,105 @@ def get_all_parking_spots():
                                                     traffic_island_height=28, break_height=break_height)
     all_spots.extend(eighth_column)
 
+    # Ninth column
+    ninth_column_parking_spot = [990, 215, 65, 28]
+    ninth_column_rows = 21
+    ninth_column_traffic_islands = [9]
+    ninth_column_break_spots = [6]
+    ninth_column = get_parking_spots_in_column(n_spots=ninth_column_rows, first_parking_spot=ninth_column_parking_spot, height_of_spot=height,
+                                                    traffic_islands_spot=ninth_column_traffic_islands, break_spots=ninth_column_break_spots,
+                                                    traffic_island_height=28, break_height=28)
+    all_spots.extend(ninth_column)
+
+    # Tenth column
+    tenth_column_parking_spot = [1065, 215, 65, 28]
+    tenth_column_rows = 21
+    tenth_column_traffic_islands = [9]
+    tenth_column_break_spots = [6]
+    tenth_column = get_parking_spots_in_column(n_spots=tenth_column_rows, first_parking_spot=tenth_column_parking_spot, height_of_spot=height,
+                                                    traffic_islands_spot=tenth_column_traffic_islands, break_spots=tenth_column_break_spots,
+                                                    traffic_island_height=28, break_height=28)
+    all_spots.extend(tenth_column)
+
+    # Eleventh column
+    eleventh_column_parking_spot = [1220, 150, 65, 28]
+    eleventh_column_rows = 24
+    eleventh_column_traffic_islands = [12]
+    eleventh_column_break_spots = []
+    eleventh_column = get_parking_spots_in_column(n_spots=eleventh_column_rows, first_parking_spot=eleventh_column_parking_spot, height_of_spot=height,
+                                                    traffic_islands_spot=eleventh_column_traffic_islands, break_spots=eleventh_column_break_spots,
+                                                    traffic_island_height=28, break_height=28)
+    all_spots.extend(eleventh_column)
+
+    # Twelfth column
+    twelfth_column_parking_spot = [1293, 150, 65, 28]
+    twelfth_column_rows = 24
+    twelfth_column_traffic_islands = [12]
+    twelfth_column_break_spots = []
+    twelfth_column = get_parking_spots_in_column(n_spots=twelfth_column_rows, first_parking_spot=twelfth_column_parking_spot, height_of_spot=height,
+                                                    traffic_islands_spot=twelfth_column_traffic_islands, break_spots=twelfth_column_break_spots,
+                                                    traffic_island_height=26, break_height=28)
+    all_spots.extend(twelfth_column)
+
+    # Thirteenth column
+    thirteenth_column_parking_spot = [1450, 150, 65, 28]
+    thirteenth_column_rows = 23
+    thirteenth_column_traffic_islands = [11]
+    thirteenth_column_break_spots = [8]
+    thirteenth_column = get_parking_spots_in_column(n_spots=thirteenth_column_rows, first_parking_spot=thirteenth_column_parking_spot, height_of_spot=height,
+                                                    traffic_islands_spot=thirteenth_column_traffic_islands, break_spots=thirteenth_column_break_spots,
+                                                    traffic_island_height=26, break_height=28)
+    all_spots.extend(thirteenth_column)
+
+    # Fourteenth column
+    fourteenth_column_parking_spot = [1525, 150, 65, 28]
+    fourteenth_column_rows = 23
+    fourteenth_column_traffic_islands = [11]
+    fourteenth_column_break_spots = [8]
+    fourteenth_column = get_parking_spots_in_column(n_spots=fourteenth_column_rows, first_parking_spot=fourteenth_column_parking_spot, height_of_spot=height,
+                                                    traffic_islands_spot=fourteenth_column_traffic_islands, break_spots=fourteenth_column_break_spots,
+                                                    traffic_island_height=26, break_height=28)
+    all_spots.extend(fourteenth_column)
+
+    # Fifteenth column
+    fifteenth_column_parking_spot = [1675, 147, 65, 28]
+    fifteenth_column_rows = 24
+    fifteenth_column_traffic_islands = [12]
+    fifteenth_column_break_spots = []
+    fifteenth_column = get_parking_spots_in_column(n_spots=fifteenth_column_rows, first_parking_spot=fifteenth_column_parking_spot, height_of_spot=height,
+                                                    traffic_islands_spot=fifteenth_column_traffic_islands, break_spots=fifteenth_column_break_spots,
+                                                    traffic_island_height=27, break_height=break_height)
+    all_spots.extend(fifteenth_column)
+
+    # Sixteenth column
+    sixteenth_column_parking_spot = [1780, 180, 65, 28]
+    sixteenth_column_rows = 23
+    sixteenth_column_traffic_islands = [11]
+    sixteenth_column_break_spots = []
+    sixteenth_column = get_parking_spots_in_column(n_spots=sixteenth_column_rows, first_parking_spot=sixteenth_column_parking_spot, height_of_spot=height,
+                                                    traffic_islands_spot=sixteenth_column_traffic_islands, break_spots=sixteenth_column_break_spots,
+                                                    traffic_island_height=27, break_height=break_height)
+    all_spots.extend(sixteenth_column)
 
 
     return all_spots
+
+
+def get_parking_spots_for_cropped():
+    height = 59
+    spots = []
+
+    # First column
+    first_column_parking_spot = [50, 1, 150, 55]
+    first_column_rows = 7
+    first_column = get_parking_spots_in_column(n_spots=first_column_rows, first_parking_spot=first_column_parking_spot, height_of_spot=height)
+    spots.extend(first_column)
+
+    # Second column
+    second_column_parking_spot = [200, 1, 150, 55]
+    second_column_rows = 7
+    second_column = get_parking_spots_in_column(n_spots=second_column_rows, first_parking_spot=second_column_parking_spot, height_of_spot=height)
+    spots.extend(second_column)
+    
+
+    return spots
