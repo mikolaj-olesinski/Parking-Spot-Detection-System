@@ -9,8 +9,6 @@ This project implements a parking spot detection system using computer vision an
 - **opencv-python (cv2)**: Video input/output operations, image processing, and drawing rectangles for visualization, detecting rectangles in desired area.
 - **pickle5**: Saving and reading the model
 
-https://github.com/mikolaj-olesinski/Parking-Spot-Detection-System/assets/137785302/7ae137ba-60ab-4337-9e58-1fe098ee8a86
-
 ![image](https://github.com/mikolaj-olesinski/Parking-Spot-Detection-System/assets/137785302/462cba78-42ea-48bc-ab05-96e6a9259413)
 
 ## Usage
