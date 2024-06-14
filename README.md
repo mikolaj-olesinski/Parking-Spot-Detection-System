@@ -12,6 +12,7 @@ This project implements a parking spot detection system using computer vision an
 
 
 https://github.com/mikolaj-olesinski/Parking-Spot-Detection-System/assets/137785302/b7a0e5a5-6903-4759-8b07-24a016a08a09
+
 ![image](https://github.com/mikolaj-olesinski/Parking-Spot-Detection-System/assets/137785302/462cba78-42ea-48bc-ab05-96e6a9259413)
 
 1. **Instalation:**
