@@ -44,5 +44,4 @@ This project implements a parking spot detection system using computer vision an
      ```bash
      python classification_on_video.py
      ```
-     
    - Pree 'q' to quit apllication when the video is active
